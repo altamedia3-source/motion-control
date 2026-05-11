@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #050505;
+  --panel: #111111;
+  --panel-2: #151515;
+  --border: rgba(250, 204, 21, 0.18);
+  --muted: #8a897d;
+  --yellow: #ffd21a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top, rgba(255, 210, 26, 0.07), transparent 35%),
+    var(--bg);
+  color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input, textarea, select {
+  outline: none;
+}
+
+input[type="range"] {
+  accent-color: var(--yellow);
+}
+
+.card {
+  background: linear-gradient(180deg, #151515, #101010);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+.label {
+  color: #b7b38e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid rgba(250, 204, 21, 0.18);
+  background: #0b0b0b;
+  color: white;
+  border-radius: 12px;
+  padding: 14px 14px;
+}
+
+.input:focus {
+  border-color: var(--yellow);
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffdb22, #ffc400);
+  color: #050505;
+  font-weight: 800;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(255, 210, 26, 0.22);
+}
+
+.btn:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.drop {
+  border: 1px dashed rgba(250, 204, 21, 0.22);
+  background: #0b0b0b;
+  border-radius: 14px;
+  min-height: 142px;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 12px;
+}
